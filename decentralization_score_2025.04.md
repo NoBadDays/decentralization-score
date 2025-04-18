@@ -1,4 +1,4 @@
-# 🧮 Decentralization Scoring System (v1.0)
+# 🧮 Decentralization Scoring System (v1.1)
 
 This scoring system evaluates how decentralized and self-hostable a platform is, based on four core metrics.
 
@@ -15,18 +15,27 @@ This scoring system evaluates how decentralized and self-hostable a platform is,
 
 ## 📋 Example Breakdown (Estimates)
 
-### 📧 Email (2025)
+| Platform   | Score | Visualization                           
+|------------|-------|--------------
+| 📧 Email   |    90 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+| 🐹 Lemmy   |    60 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 
+| 🐘 Mastodon|    55 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩                   
+| 🔵 Bluesky |    14 | 🟥🟥🟥                                 
+| 🟥 Reddit  |     3 | 🟥 
+       
 
-- **Top Provider User Share**: Apple ≈ 53.67% → **Score: 4.5/30**
-- **Top Provider Content Share**: Apple likely handles >50% of mail → **Score: 4.5/30**
+### 📧 Email
+
+- **Top Provider User Share**: Google ≈ 17% → **Score: 27/30**
+- **Top Provider Content Share**: Google likely handles ≈ 17% of mail → **Score: 27/30**
 - **Self-Hosting: Server**: Easy (Leverage email hosting services) → **Score: 18/20**
 - **Self-Hosting: Client**: Easy (Thunderbird, K-9, etc.) → **Score: 18/20**
 
-**Total**: 45/100
+**Total**: 90/100
 
 ---
 
-### 🐹 Lemmy (2025)
+### 🐹 Lemmy
 
 - **Top Provider User Share**: lemmy.world ≈ 37.17% → **Score: 12/30**
 - **Top Provider Content Share**: lemmy.world likely hosts ~37% content → **Score: 12/30**
@@ -37,7 +46,7 @@ This scoring system evaluates how decentralized and self-hostable a platform is,
 
 ---
 
-### 🐘 Mastodon (2025)
+### 🐘 Mastodon
 
 - **Top Provider User Share**: mastodon.social ≈ 42.7% → **Score: 11/30**
 - **Top Provider Content Share**: mastodon.social ≈ 45–50% content → **Score: 10/30**
@@ -48,7 +57,7 @@ This scoring system evaluates how decentralized and self-hostable a platform is,
 
 ---
 
-### 🔵 Bluesky (2025)
+### 🔵 Bluesky
 
 - **Top Provider User Share**: bsky.social ≈ ~90%+ (very centralized) → **Score: 0/30**
 - **Top Provider Content Share**: Nearly all content on bsky.social → **Score: 0/30**
@@ -59,10 +68,10 @@ This scoring system evaluates how decentralized and self-hostable a platform is,
 
 ---
 
-### 🟥 Reddit (2025)
+### 🟠 Reddit
 
-- **Top Provider User Share**: Reddit ≈ 48.4% → **Score: 0/30**
-- **Top Provider Content Share**: Reddit hosts a significant portion of user-generated content → **Score: 0/30**
+- **Top Provider User Share**: Reddit hosts all user accounts = 100% → **Score: 0/30**
+- **Top Provider Content Share**: Reddit hosts all user-generated content → **Score: 0/30**
 - **Self-Hosting: Server**: Not self-hostable (proprietary platform) → **Score: 0/20**
 - **Self-Hosting: Client**: Some unofficial clients available → **Score: 3/20**
 
@@ -82,7 +91,7 @@ This measures how many users are on the largest provider (or instance).
 - **> 80%**: If a provider has more than 80%, it gets 0 points.
 
 ### 📊 Formula:
-`Score = 30 × (1 - (TopProviderShare - 10%) / 70%)`  
+`Score = 30 × (1 - (TopProviderShare - 10) / 70)`  
 …but only if TopProviderShare is between 10% and 80%.  
 If below 10%, full 30. If above 80%, zero.
 
