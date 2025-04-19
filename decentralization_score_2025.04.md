@@ -1,4 +1,4 @@
-# 🧮 Decentralization Scoring System (v1.1)
+# 🧮 Decentralization Scoring System (v1.2)
 
 This scoring system evaluates how decentralized and self-hostable a platform is, based on four core metrics.
 
@@ -17,21 +17,24 @@ This scoring system evaluates how decentralized and self-hostable a platform is,
 
 | Platform   | Score | Visualization                           
 |------------|-------|--------------
-| 📧 Email   |    90 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+| 📧 Email   |    88 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
 | 🐹 Lemmy   |    60 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩 
-| 🐘 Mastodon|    55 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩                   
+| 🐘 Mastodon|    55 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩                 
+| 🟣 PeerTube   |    68 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩
+| 🖼 Pixelfed   |    63 | 🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩  
 | 🔵 Bluesky |    14 | 🟥🟥🟥                                 
 | 🟥 Reddit  |     3 | 🟥 
-       
+
+---
 
 ### 📧 Email
 
 - **Top Provider User Share**: Google ≈ 17% → **Score: 27/30**
 - **Top Provider Content Share**: Google likely handles ≈ 17% of mail → **Score: 27/30**
-- **Self-Hosting: Server**: Easy (Leverage email hosting services) → **Score: 18/20**
+- **Self-Hosting: Server**: Easy (Can leverage hundreds email hosting services) → **Score: 16/20**
 - **Self-Hosting: Client**: Easy (Thunderbird, K-9, etc.) → **Score: 18/20**
 
-**Total**: 90/100
+**Total**: 88/100
 
 ---
 
@@ -54,6 +57,28 @@ This scoring system evaluates how decentralized and self-hostable a platform is,
 - **Self-Hosting: Client**: Strong ecosystem (Tusky, web, etc.) → **Score: 19/20**
 
 **Total**: 55/100
+
+---
+
+### 🟣 PeerTube
+
+- **Top Provider User Share**: Framatube (~17%) → **Score: 27/30**
+- **Top Provider Content Share**: Estimated around 20% → **Score: 25/30**
+- **Self-Hosting: Server**: Docker, active community, moderate resources → **Score: 16/20**
+- **Self-Hosting: Client**: Web-first UI, FOSS, some mobile options → **Score: 18/20**
+
+**Total**: 68/100
+
+---
+
+### 🖼 Pixelfed
+
+- **Top Provider User Share**: pixelfed.social ≈ 23% → **Score: 24/30**
+- **Top Provider Content Share**: Estimated around 30% → **Score: 21/30**
+- **Self-Hosting: Server**: Laravel-based, Docker available, some config needed → **Score: 15/20**
+- **Self-Hosting: Client**: Web UI, FOSS, mobile apps in progress → **Score: 18/20**
+
+**Total**: 63/100
 
 ---
 
@@ -105,7 +130,13 @@ These scores measure how easy it is for individuals or communities to run their 
 
 This looks at how technically easy it is to run your own **backend** (e.g., email server, Mastodon server) or **User Interface** (e.g., web-interface or mobile-app)
 
-- **Very Easy**: One-command Docker, low resources, great documentation → **18–20 points**
+- **Very Easy**: One-command, low resources, great documentation → **18–20 points**
 - **Moderate**: Docker or manual setup, some config, active community support → **13–17 points**
 - **Hard**: Complex setup, needs regular updates or custom config (e.g. DNS, spam) → **6–12 points**
 - **Very Hard or Proprietary**: Little to no self-hosting support, undocumented → **0–5 points**
+
+---
+
+# 📚 Sources
+
+//TODO This is very much still a work in progress, so it likely still contains mistakes and the example data isn't yet retreived from reliable sources. I'm working on that. If you want to help provide sources please do.
